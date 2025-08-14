@@ -6,14 +6,29 @@
 }
 
 .container {
-  max-width: 450px;
+  max-width: 550px;
   margin: 40px auto;
   padding: 20px;
   border: 2px solid white;
-  border-radius: 40px;
-  background-color: #f8f9fa;
-  font-family: Arial, sans-serif;
+  border-radius: 2px;
+  background-color: #fbf9f9;
+  font-family: cursive;
   box-shadow: 0px 0px 30px black;
+}
+.container_0 {
+  display: flex;
+  justify-content: center;
+;
+}
+.container_1 {
+  max-width: 300px;
+  /* box-shadow: -20px 0px 30px rgb(141, 254, 179); */
+  border-radius: 12px;
+}
+.container_2 {
+  max-width: 300px;
+  /* box-shadow: 20px 0px 30px rgb(255, 153, 153); */
+  border-radius: 12px;
 }
 
 h1 {
@@ -31,17 +46,18 @@ label {
 input {
   width: 80%;
   padding: 10px;
-  border: 1px solid black;
+  border: none;
   border-radius: 20px;
   margin-bottom: 20px;
   font-size: 36px;
-  box-shadow: 0px 0px 50px white;
+  box-shadow: 0px 0px 10px rgb(150, 150, 149);
   font-weight: bold;
   text-align: center;
 }
 
 .resultados {
   margin-bottom: 35px;
+  margin-top: 40px;
 }
 
 .resultado_contenido {
@@ -69,13 +85,13 @@ input {
 
 
 .separador {
-  border-top: 3px solid black;
+  border-top: 3px solid rgb(0, 221, 166);
   display: flex;
 }
 
 .separador_1 {
   margin: 12px 0;
-  border-right: 3px solid black;
+  border-right: 3px solid rgb(0, 221, 166);
 }
 
 .separador_contenido {
@@ -85,6 +101,7 @@ input {
   align-items: center;
   justify-content: space-between;
   margin: 0 12px;
+  
 }
 
 .icono {
@@ -95,6 +112,18 @@ input {
   justify-content: center;
 }
 
+.icono_0 {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  margin-right: 5px;
+  display: flex;
+}
+
+.label_0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .div_resultado {
   width: 80px;
@@ -104,15 +133,37 @@ input {
   box-shadow: 0 0 5px black;
   font-weight: bold;
   font-size: 26px;
+  position: relative;
 }
 
-.icono_alert {
-  font-size: 60px;
-  color: red;
-  margin-right: 20px;
-  display: flex;
-  justify-content: center;
+.div_resultado_resaltado {
+  background-color: rgb(122, 162, 255);
 }
+
+.div_resultado_resaltado_1 {
+  background-color: rgb(255, 241, 118);
+}
+
+.div_yape_resaltado {
+  background-color: rgb(177, 138, 255);
+}
+
+.div_fisico_resaltado {
+  background-color: rgb(122, 162, 255);
+}
+
+.cabecera {
+  font-size: 18px;
+  position: absolute;
+  top: -32px; /* mueve hacia arriba */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 6px;
+  font-weight: bold;
+  text-shadow: 0px 0px 12px rgb(104, 104, 104);
+}
+
+
 footer {
   margin-top: 20px;
 }
@@ -121,6 +172,5 @@ footer strong {
   display: block;
   margin-top: 10px;
   font-size: 17px;
-  color: red;
   font-size: x-large;
 }
